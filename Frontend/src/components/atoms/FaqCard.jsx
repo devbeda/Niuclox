@@ -16,9 +16,9 @@ function FaqCard({ faq, isOpen, onToggle }) {
         },
       }}
       viewport={{ amount: 0.5 }}
-      className="flex justify-between w-full md:w-3/5 border-[0.01rem] border-niucloxWhite bg-niucloxWhite rounded-2xl px-2 py-1 md:px-8 md:py-3"
+      className="flex justify-between w-full md:w-3/5 border-[0.01rem] border-niucloxWhite bg-niucloxWhite rounded-2xl px-3 py-2 md:px-8 md:py-3"
     >
-      <div className="flex flex-col w-11/12 gap-2">
+      <div className="flex flex-col w-11/12 gap-2 items-start justify-center ">
         <h2 className="md:text-[1.6rem] sm:text-[1.2rem]  text-[1rem] font-[500]">{faq.title}</h2>
 
         <AnimatePresence initial={false}>
