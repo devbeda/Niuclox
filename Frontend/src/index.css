@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-niucloxBlack: #191919;
+  --color-niucloxWhite: #dedede;
+  --color-niucloxGray: #919191;
+  --color-niucloxLightWhite: #f7f7f7;
+  --color-instagram: #e1306c;
+  --color-facebook: #1877f2;
+  --color-linkedin: #004182;
+  --color-twitter: #aab8c2;
+  --font-niucloxPrimary: Mona Sans, sans-serif;
+}
+
+@layer components {
+  .card {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-xl);
+  }
+  .hover_effect {
+    @apply hover:bg-niucloxBlack hover:text-niucloxWhite hover:rounded-2xl px-6 py-1 transition-all duration-300;
+  }
+  .hover2_effect {
+    @apply hover:bg-niucloxWhite hover:text-niucloxBlack hover:rounded-2xl px-6 py-1 transition-all duration-300;
+  }
+}
