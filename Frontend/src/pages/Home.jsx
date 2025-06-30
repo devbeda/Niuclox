@@ -64,10 +64,10 @@ function Home() {
   };
 
   return (
-    <div className=" text-niucloxBlack font-niucloxPrimary overflow-y-hidden py-14  ">
+    <div className=" text-niucloxBlack font-niucloxPrimary overflow-y-hidden   ">
       {/* HERO SECTION */}
-      <div className=" bg-niucloxLightWhite  flex flex-col-reverse sm:flex-row  items-center sm:h-auto h-[85vh] justify-between md:px-14 px-7 pt-[80px]  ">
-        <div className="mt-10 ">
+      <div className=" bg-niucloxLightWhite  flex flex-col-reverse sm:flex-row  items-center sm:h-auto h-[85vh] sm:justify-between justify-evenly md:px-14 px-7  md:pt-[100px] sm:pt-[80px]  ">
+        <div className="md:mt-10 mt-0 ">
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
