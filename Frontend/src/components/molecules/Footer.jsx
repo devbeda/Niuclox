@@ -81,28 +81,28 @@ function Footer() {
           >
             <motion.a
               variants={itemVariants}
-              href=""
+              href="https://www.instagram.com/niuclox/"
               className="md:text-[18px] sm:text-[14px] text-[12px] hover:text-instagram font-[600px] duration-300"
             >
               Instagram
             </motion.a>
             <motion.a
               variants={itemVariants}
-              href=""
+              href="https://www.facebook.com/niuclox/"
               className="md:text-[18px] sm:text-[14px] text-[12px] hover:text-facebook duration-300"
             >
               Facebook
             </motion.a>
             <motion.a
               variants={itemVariants}
-              href=""
+              href="https://www.linkedin.com/company/niuclox/"
               className="md:text-[18px] sm:text-[14px] text-[12px] hover:text-linkedin duration-300"
             >
               LinkedIn
             </motion.a>
             <motion.a
               variants={itemVariants}
-              href=""
+              href="https://x.com/niuclox"
               className="md:text-[18px] sm:text-[14px] text-[12px] hover:text-twitter duration-300"
             >
               X

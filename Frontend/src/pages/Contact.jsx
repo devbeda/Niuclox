@@ -101,24 +101,24 @@ function Contact() {
             className="flex md:gap-5 sm:gap-3 gap-2  md:text-xl sm:text-[1rem] text-[0.7rem] text-niucloxGray"
           >
             <motion.a
-            variants={linkVariants}
-              href="https://facebook.com"
+              variants={linkVariants}
+              href="https://www.facebook.com/niuclox/"
               target="_blank"
               className="hover:text-facebook"
             >
               <LuFacebook />
             </motion.a>
             <motion.a
-            variants={linkVariants}
-              href="https://instagram.com"
+              variants={linkVariants}
+              href="https://www.instagram.com/niuclox/"
               target="_blank"
               className="hover:text-instagram"
             >
               <LuInstagram />
             </motion.a>
             <motion.a
-            variants={linkVariants}
-              href="https://linkedin.com"
+              variants={linkVariants}
+              href="https://www.linkedin.com/company/niuclox/"
               target="_blank"
               className="hover:text-linkedin"
             >
@@ -129,22 +129,23 @@ function Contact() {
 
         {/* Right Form Section */}
         <motion.form
-        variants={containerVariants}
-              initial="hidden"
-              whileInView="show"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
           onSubmit={handleSubmit(onSubmit)}
           className="sm:w-3/5 w-full md:p-10 sm:p-7 p-5 space-y-4"
         >
           {/* Name Fields */}
           <motion.div
-          variants={containerVariants}
-              initial="hidden"
-              whileInView="show"
-          className="flex gap-4">
-            <motion.div
-            variants={cardVariants}
-            className="w-1/2">
-              <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">First Name</label>
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            className="flex gap-4"
+          >
+            <motion.div variants={cardVariants} className="w-1/2">
+              <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">
+                First Name
+              </label>
               <input
                 type="text"
                 {...register("first_name", {
@@ -158,10 +159,10 @@ function Contact() {
                 </p>
               )}
             </motion.div>
-            <motion.div
-            variants={cardVariants}
-            className="w-1/2">
-              <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">Last Name</label>
+            <motion.div variants={cardVariants} className="w-1/2">
+              <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">
+                Last Name
+              </label>
               <input
                 type="text"
                 {...register("last_name", {
@@ -178,10 +179,10 @@ function Contact() {
           </motion.div>
 
           {/* Email */}
-          <motion.div
-          variants={cardVariants}
-          >
-            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">Email</label>
+          <motion.div variants={cardVariants}>
+            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">
+              Email
+            </label>
             <input
               type="email"
               {...register("email", { required: "Email is required" })}
@@ -195,10 +196,10 @@ function Contact() {
           </motion.div>
 
           {/* Phone */}
-          <motion.div
-          variants={cardVariants}
-          >
-            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">Phone No</label>
+          <motion.div variants={cardVariants}>
+            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">
+              Phone No
+            </label>
             <input
               type="text"
               {...register("phone_no", {
@@ -214,10 +215,10 @@ function Contact() {
           </motion.div>
 
           {/* Message */}
-          <motion.div
-          variants={cardVariants}
-          >
-            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">Message</label>
+          <motion.div variants={cardVariants}>
+            <label className="md:text-sm sm:text-[0.7rem] text-[0.7rem] font-semibold">
+              Message
+            </label>
             <textarea
               rows={5}
               {...register("message", { required: "Message is required" })}
