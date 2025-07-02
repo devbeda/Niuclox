@@ -35,9 +35,34 @@ function Contact() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  const onSubmit = async (data) => {
+  try {
+    const response = await fetch("https://formspree.io/f/yourFormID", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        first_name: data.first_name,
+        last_name: data.last_name,
+        email: data.email,
+        phone_no: data.phone_no,
+        message: data.message,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Failed to send message.");
+    }
+  } catch (error) {
+    console.error("Form submit error:", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
+
 
   return (
     <div className="min-h-screen py-10 pt-[80px] flex justify-center items-center font-niucloxPrimary bg-white">
