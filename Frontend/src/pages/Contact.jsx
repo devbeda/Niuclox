@@ -7,6 +7,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { useForm } from "react-hook-form";
 import BtnCmp from "../components/atoms/BtnCmp";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const containerVariants = {
@@ -36,33 +37,35 @@ function Contact() {
   } = useForm();
 
   const onSubmit = async (data) => {
-  try {
-    const response = await fetch("https://formspree.io/f/xyzjvjwr", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        first_name: data.first_name,
-        last_name: data.last_name,
-        email: data.email,
-        phone_no: data.phone_no,
-        message: data.message,
+    const templateParams = {
+      first_name: data.first_name,
+      last_name: data.last_name,
+      email: data.email,
+      phone_no: data.phone_no,
+      message: data.message,
+      time: new Date().toLocaleString("en-IN", {
+        dateStyle: "long",
+        timeStyle: "short",
       }),
-    });
+    };
 
-    if (response.ok) {
-      alert("Message sent successfully!");
-    } else {
-      alert("Failed to send message.");
-    }
-  } catch (error) {
-    console.error("Form submit error:", error);
-    alert("Something went wrong. Please try again.");
-  }
-};
-
+    emailjs
+      .send(
+        "service_3o2x1eg",
+        "template_er41n8p",
+        templateParams,
+        "_Hb-bO7KyCMFXs7qj"
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  };
 
   return (
     <div className="min-h-screen py-10 pt-[80px] flex justify-center items-center font-niucloxPrimary bg-white">
