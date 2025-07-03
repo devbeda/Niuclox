@@ -56,48 +56,45 @@ function About() {
   const review_list = [
     {
       rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
+      feedback:
+        "Niuclox delivered exactly what we needed — a fast, modern website that’s easy to manage and looks amazing on every device.",
+      name: "user_456",
       location: "Hyderabad,India",
       image:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
+      feedback:
+        "The team at Niuclox was professional, responsive, and incredibly skilled. Our mobile app turned out better than we imagined!",
+      name: "user_567",
+      location: "",
+      image:
+        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      rating: 4.5,
+      feedback:
+        "I’m impressed with how quickly Niuclox understood our vision and turned it into a clean, high-performance website.",
+      name: "TheHouseofAyara",
+      location: "Dubai, UAE",
+      image:
+        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      rating: 4.5,
+      feedback:
+        "Great experience from start to finish! Niuclox handled everything from UI/UX design to development seamlessly.",
+      name: "user_678",
       location: "Hyderabad,India",
       image:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
-      location: "Hyderabad,India",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
-      location: "Hyderabad,India",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
-      location: "Hyderabad,India",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      rating: 4.5,
-      feedback: "work is awsome",
-      name: "niuclox",
+      feedback:
+        "Their attention to detail, timely delivery, and post-launch support made Niuclox the perfect tech partner for our business.",
+      name: "user_789",
       location: "Hyderabad,India",
       image:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -166,7 +163,7 @@ function About() {
               duration: 0.8,
               ease: "easeOut",
             }}
-            viewport={{ amount: 0.4 }}
+            viewport={{ once: true, amount: 0.4 }}
             className=" lg:text-[2.7rem] md:text-[2.5rem] sm:text-[2.2rem] text-[1.7rem] text-center"
           >
             Our proven <br /> success stories

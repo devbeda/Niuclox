@@ -146,7 +146,7 @@ function Home() {
               duration: 1,
             },
           }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-center text-[1.8rem] lg:text-[3rem] md:text-[2.7rem] font-semibold text-niucloxBlack overflow-hidden"
         >
           Our Digital <br />
@@ -162,7 +162,7 @@ function Home() {
               duration: 1,
             },
           }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="text-center mt-2 text-[0.8rem] md:text-[1rem] text-niucloxGray overflow-hidden"
         >
           We provide a variety of digital solutions including <br />
@@ -182,7 +182,7 @@ function Home() {
                 duration: 1,
               },
             }}
-            viewport={{ amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="relative flex-1  px-6 py-5 rounded-2xl  transition duration-300 overflow-hidden"
             style={{
               backgroundImage: `url(${bg_product})`,
@@ -236,7 +236,7 @@ function Home() {
                 duration: 1,
               },
             }}
-            viewport={{ amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="relative flex-1  px-6 py-5 rounded-2xl  transition duration-300 overflow-hidden"
             style={{
               backgroundImage: `url(${bg_product})`,
@@ -296,7 +296,7 @@ function Home() {
                 duration: 1,
               },
             }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="w-full md:w-[45%] overflow-hidden"
           >
             <img src={team} alt="" className=" rounded-2xl shadow-2xl" />
@@ -311,7 +311,7 @@ function Home() {
                 duration: 1,
               },
             }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="w-full md:w-[50%] h-auto py-6 flex flex-col gap-6 overflow-hidden"
           >
             <h1 className="md:text-[2.5rem] text-[1.45rem] font-semibold text-niucloxBlack leading-snug">
@@ -352,7 +352,7 @@ function Home() {
               duration: 0.2,
             },
           }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="md:text-[2.7rem] text-[2rem] text-center overflow-hidden "
         >
           Our Recent Projects
@@ -361,7 +361,7 @@ function Home() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="grid grid-rows-1 sm:grid-cols-3 gap-6 px-[10%] py-10 overflow-hidden"
         >
           <motion.img
@@ -384,7 +384,7 @@ function Home() {
           />
         </motion.div>
         <div className="flex justify-center items-center w-full">
-          <BtnCmp title={"See More >>"} nav={"/project"} />
+          <BtnCmp title={"See More >>"} nav={"/services"} />
         </div>
       </div>
 
@@ -401,7 +401,7 @@ function Home() {
               duration: 0.8,
             },
           }}
-          viewport={{ amount: 0.4 }}
+          viewport={{ once: true, amount: 0.4 }}
           className="text-center text-[1.5rem] md:text-[2.7rem] sm:text-[1.8rem] overflow-hidden"
         >
           Frequntly Asked <br /> Questions (FAQ's)
@@ -418,7 +418,7 @@ function Home() {
               duration: 0.4,
             },
           }}
-          viewport={{ amount: 0.4 }}
+          viewport={{ once: true, amount: 0.4 }}
           className=" flex flex-col w-full  items-center justify-start mt-9 gap-3 h-[80%] overflow-hidden md:py-8 "
         >
           {faq_list.map((faq, index) => (

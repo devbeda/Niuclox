@@ -57,13 +57,14 @@ function Header() {
       className="w-full fixed top-0 z-50 px-5 sm:px-8 md:px-20 md:py-6 py-3  backdrop-blur-md flex items-center justify-between"
     >
       {/* Logo */}
-      <motion.div
+      <motion.NavLink
+      to={'/'}
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
         <img src={companyLogo} alt="Niuclox Logo" className="w-[120px] md:w-[175px]" />
-      </motion.div>
+      </motion.NavLink>
 
       {/* Desktop Nav */}
       <motion.div

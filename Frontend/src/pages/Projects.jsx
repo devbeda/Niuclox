@@ -78,7 +78,7 @@ function Projects() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{  amount: 0.4 }} // scroll trigger
+          viewport={{   once: true,amount: 0.4 }} // scroll trigger
           className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-5 sm:px-8 md:px-[10%] py-10"
         >
           {/* First 4 images */}
